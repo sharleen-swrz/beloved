@@ -1,0 +1,22 @@
+:root {
+  --paper:#f0eae1;
+  --ink:#494036;
+  --muted:#786c60;
+  --line:#d7cdbf}
+* {
+  box-sizing:border-box}
+html {
+  scroll-behavior:smooth;
+  scroll-padding-top:16px}
+body {
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Manrope,Arial,sans-serif;
+  font-size:14px}
+a {
+  color:inherit;
+  text-decoration:none}
+a:focus-visible,button:focus-visible {
+  outline:2px solid currentColor;
+  outline-offset:7px}

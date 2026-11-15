@@ -1,0 +1,22 @@
+.notice {
+  min-height:20px;
+  font-size:12px;
+  padding-bottom:15px}
+dialog {
+  border:1px solid var(--line);
+  background:var(--paper);
+  color:var(--ink);
+  max-width:440px;
+  padding:35px;
+  line-height:1.8}
+dialog::backdrop {
+  background:#51483e66}
+dialog h3 {
+  font-size:32px}
+dialog button {
+  margin-top:20px;
+  background:var(--ink);
+  color:white;
+  border:0;
+  padding:12px 20px;
+  cursor:pointer}

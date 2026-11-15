@@ -1,0 +1,13 @@
+.intro {
+  text-align:center;
+  padding:95px 22px 100px;
+  border-bottom:1px solid var(--line)}
+.intro h2 {
+  font-size:clamp(36px,4vw,57px);
+  max-width:760px;
+  margin:23px auto;
+  line-height:1.16}
+.intro p,.copy p {
+  color:var(--muted);
+  line-height:1.9;
+  font-size:13px}

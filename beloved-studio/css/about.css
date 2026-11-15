@@ -1,0 +1,17 @@
+.about {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10%;
+  align-items:center;
+  background:#eee7dd}
+.about .image-slot {
+  min-height:520px;
+  background:#ddd1c1}
+.copy .eyebrow {
+  margin-bottom:22px}
+.copy h2 {
+  margin-bottom:28px}
+.copy p+p {
+  margin-top:15px}
+.copy .link {
+  margin-top:22px}

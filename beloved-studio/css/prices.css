@@ -1,0 +1,28 @@
+.prices {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12%;
+  align-items:start}
+.prices p {
+  font-size:13px;
+  line-height:1.9;
+  color:var(--muted);
+  max-width:400px;
+  margin-top:25px}
+.price-note {
+  padding:30px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line)}
+.price-note h3 {
+  font-size:32px}
+.price-note p {
+  margin:16px 0 20px}
+
+.prices-image {
+  display:block;
+  width:100%;
+  aspect-ratio:4 / 3;
+  object-fit:cover;
+  object-position:center 45%;
+  margin-bottom:28px;
+}

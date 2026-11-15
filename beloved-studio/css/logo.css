@@ -1,0 +1,33 @@
+/* A calligraphic wordmark with an expressive capital flourish. */
+.logo {
+  display:inline-flex;
+  align-items:baseline;
+  flex-shrink:0;
+  color:inherit;
+  white-space:nowrap;
+  font-size:30px;
+  font-weight:300;
+  line-height:1;
+  padding:4px 8px 8px 0;
+  transform:scaleX(.96);
+  transform-origin:center center;
+}
+.logo-initial {
+  position:relative;
+  z-index:1;
+  font-family:'Parisienne','Segoe Script',cursive;
+  font-style:normal;
+  font-size:1.16em;
+  font-weight:400;
+  margin-right:-.025em;
+  transform:translateY(.025em);
+}
+.logo-word {
+  font-family:'Parisienne','Segoe Script',cursive;
+  font-weight:400;
+  letter-spacing:.005em;
+}
+.logo-loved {
+  margin-left:0;
+  font-style:normal;
+}
