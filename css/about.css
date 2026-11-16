@@ -7,8 +7,16 @@
 }
 
 .about .image-slot {
-  min-height: 520px;
+  width: 85%;
+  justify-self: center;
+  min-height: 0;
+  aspect-ratio: 2 / 3;
   background: #ddd1c1
+}
+
+.about .image-slot img {
+  object-position: right center;
+  filter: none
 }
 
 .copy .eyebrow {

@@ -77,15 +77,15 @@ h2 {
   filter: saturate(.72) brightness(.94);
 }
 
-.work:nth-child(3) .image-slot img {
+.work:nth-child(4) .image-slot img {
   object-position: 42% center;
 }
 
-.work:nth-child(4) {
+.work:nth-child(5) {
   padding-top: 65px;
 }
 
-.work:nth-child(4) .image-slot {
+.work:nth-child(5) .image-slot {
   min-height: 380px;
 }
 
