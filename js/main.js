@@ -1,10 +1,31 @@
-document.getElementById('year').textContent=new Date().getFullYear();
-const modal=document.getElementById('social-dialog');
-document.querySelectorAll('[data-social]').forEach(button=>button.addEventListener('click',()=>{document.getElementById('social-message').textContent='Das '+button.dataset.social+'-Profil wird ergänzt, sobald die passende Adresse vorliegt.';
-modal.showModal()}));
-document.getElementById('close-dialog').addEventListener('click',()=>modal.close());
-modal.addEventListener('click',event=>{if(event.target===modal){const rect=modal.getBoundingClientRect();
-if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)modal.close()}});
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const modal = document.getElementById('social-dialog');
+
+document.querySelectorAll('[data-social]').forEach(button =>
+  button.addEventListener('click', () => {
+    document.getElementById('social-message').textContent =
+      'Das ' + button.dataset.social +
+      '-Profil wird ergänzt, sobald die passende Adresse vorliegt.';
+    modal.showModal();
+  })
+);
+
+document.getElementById('close-dialog').addEventListener('click', () => modal.close());
+
+modal.addEventListener('click', event => {
+  if (event.target === modal) {
+    const rect = modal.getBoundingClientRect();
+    if (
+      event.clientX < rect.left ||
+      event.clientX > rect.right ||
+      event.clientY < rect.top ||
+      event.clientY > rect.bottom
+    ) {
+      modal.close();
+    }
+  }
+});
 
 // The original header scrolls with the banner; only upward scrolling fixes it.
 const header = document.querySelector('header');
@@ -19,8 +40,10 @@ function updateHeader() {
   const headerHeight = header.offsetHeight;
   const delta = currentY - lastScrollY;
 
-  const returningToTop = currentY === 0 &&
-    (header.classList.contains('is-scrolled') || header.classList.contains('is-returning-top'));
+  const returningToTop =
+    currentY === 0 &&
+    (header.classList.contains('is-scrolled') ||
+      header.classList.contains('is-returning-top'));
   header.classList.toggle('is-returning-top', returningToTop);
 
   if (currentY === 0 || anchorNavigation) {
@@ -37,7 +60,8 @@ function updateHeader() {
   }
   lastScrollY = currentY;
 
-  header.inert = !header.classList.contains('is-scrolled') && currentY >= headerHeight;
+  header.inert =
+    !header.classList.contains('is-scrolled') && currentY >= headerHeight;
   scrollFramePending = false;
 }
 
