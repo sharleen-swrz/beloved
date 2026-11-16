@@ -40,11 +40,7 @@
     gap: 32px
   }
 
-  .work:nth-child(2),.work:nth-child(4) {
-    padding-top: 0
-  }
-
-  .image-slot,.work:nth-child(2) .image-slot {
+  .image-slot {
     min-height: 380px
   }
 

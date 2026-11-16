@@ -42,15 +42,6 @@ h2 {
   position: relative
 }
 
-.work:nth-child(2) {
-  padding-top: 95px
-}
-
-.work:nth-child(2) .image-slot {
-  background: #d9cec0;
-  min-height: 380px
-}
-
 .caption {
   display: flex;
   justify-content: space-between;
@@ -75,18 +66,6 @@ h2 {
   height: 100%;
   object-fit: cover;
   filter: saturate(.72) brightness(.94);
-}
-
-.work:nth-child(4) .image-slot img {
-  object-position: 42% center;
-}
-
-.work:nth-child(5) {
-  padding-top: 65px;
-}
-
-.work:nth-child(5) .image-slot {
-  min-height: 380px;
 }
 
 .project-link {
